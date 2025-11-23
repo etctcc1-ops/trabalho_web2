@@ -228,7 +228,33 @@ form button:hover {
     margin-bottom: 10px;
     color: #e6b800;
 }
+/* Area do locador */
+:root{--bg:#f4f4f4;--accent:#e6b800;--dark:#111;--card:#fff;--muted:#666}
+    *{box-sizing:border-box}
+ main{max-width:1100px;margin:36px auto;padding:0 20px}
+    h1{color:var(--accent);text-align:center;margin-bottom:26px}
 
+    .dashboard{display:flex;gap:30px;align-items:flex-start}
+
+    /* Form card */
+    .card{background:var(--card);padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.08);flex:0 0 380px}
+    .card h2{margin:0 0 12px}
+    .field{margin-bottom:12px}
+    input[type=text],input[type=number],select,input[type=file]{width:100%;padding:10px;border:1px solid #ddd;border-radius:6px}
+    label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted)}
+    .btn{display:inline-block;width:100%;padding:10px;background:var(--accent);border:none;color:#111;font-weight:700;border-radius:6px;cursor:pointer;margin-top:8px}
+
+    /* Right column: lists */
+    .list-col{flex:1}
+    .section-title{text-align:center;color:var(--accent);margin:0 0 14px}
+    .grid{display:grid;grid-template-columns:repeat(1,1fr);gap:18px}
+    .car-card{display:flex;gap:16px;align-items:center;background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+    .car-card img{width:140px;height:90px;object-fit:cover;border-radius:8px}
+    .car-info{flex:1}
+    .car-info h4{margin:0 0 6px}
+    .car-info p{margin:0;font-size:13px;color:var(--muted)}
+    .car-actions{display:flex;flex-direction:column;gap:8px}
+    .small-btn{padding:8px 10px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
 /* Rodapé */
 footer {
   background-color: #111;
