@@ -301,6 +301,44 @@ form button:hover {
     .car-info p{margin:0;font-size:13px;color:var(--muted)}
     .car-actions{display:flex;flex-direction:column;gap:8px}
     .small-btn{padding:8px 10px;border-radius:6px;border:1px solid #ddd;background:#fff;cursor:pointer}
+/* Area do locatario */
+.container {
+            width: 80%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 90%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .status {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
 /* Rodapé */
 footer {
   background-color: #111;
