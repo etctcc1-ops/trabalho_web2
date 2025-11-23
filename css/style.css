@@ -1,0 +1,240 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Cabeçalho */
+.logo {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    color: yellow;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #f4c10f;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f4c10f;
+}
+
+
+/* Página inicial */
+.pagina1 {
+  height: 85vh;
+  background-image: url('../imagens/teste-carros-um.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.pagina1 h2 {
+  font-size: 2.5rem;
+}
+
+.pagina1 p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Carros */
+.categorias {
+  text-align: center;
+  margin: 40px 0 10px;
+  font-size: 1.8rem;
+  color: #f4c10f;
+}
+
+.carros-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 5%;
+  margin-bottom: 50px;
+}
+
+.carro {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.carro:hover {
+  transform: scale(1.03);
+}
+
+.carro img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.carro h3 {
+  margin: 10px 0;
+}
+
+.carro button {
+  background-color: #f4c10f;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.carro button:hover {
+  background-color: #d9aa0c;
+}
+
+/* Página do carro */
+.carro-detalhe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 5%;
+}
+
+.carro-detalhe img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  color: #f4c10f;
+}
+
+.info p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* Login e Cadastro */
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f4c10f;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #d9aa0c;
+}
+.escolha-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.escolha-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.escolha-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.opcao {
+    flex: 1;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    text-decoration: none;
+    color: #000;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.opcao:hover {
+    border-color: #e6b800;
+    transform: scale(1.03);
+}
+
+.opcao h3 {
+    margin-bottom: 10px;
+    color: #e6b800;
+}
+
+/* Rodapé */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  
+}
